@@ -1,0 +1,274 @@
+/* CSS Document */
+/* CSS Reset */
+@import url(https://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700italic,700&subset=cyrillic,latin);
+@import url(https://fonts.googleapis.com/css?family=PT+Sans+Caption:700&subset=latin,cyrillic);
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+strong, b {
+  font-weight: bold; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* End CSS Reset */
+body {
+  font-family: "PT Sans", sans-serif; }
+
+#wrapper {
+  margin: 0 auto;
+  max-width: 1920px;
+  min-width: 960px;
+  overflow: hidden; }
+
+.header-wrap {
+  vertical-align: middle;
+  margin: 25px 0;
+  max-width: 1920px; }
+  .header-wrap p {
+    font-size: 13px;
+    color: #000;
+    font-style: italic;
+    font-family: "PT Sans", sans-serif; }
+  .header-wrap span {
+    font-size: 13px;
+    color: #000;
+    font-family: "PT Sans", sans-serif; }
+  .header-wrap > div {
+    width: 13.5%;
+    margin: 0 1%; }
+  .header-wrap .logo {
+    display: inline-block;
+    max-width: 280px;
+    text-align: center;
+    vertical-align: middle; }
+    .header-wrap .logo img {
+      width: 100%; }
+  .header-wrap .region-numbers {
+    display: inline-block;
+    vertical-align: middle; }
+    .header-wrap .region-numbers .request-call {
+      font-size: 14px;
+      color: #01469d;
+      text-transform: uppercase;
+      padding: 2px; }
+    .header-wrap .region-numbers .region-list {
+      font-size: 14px;
+      color: #01469d;
+      border-bottom: 1px dashed #01469d;
+      position: relative;
+      text-decoration: none;
+      padding: 2px; }
+      .header-wrap .region-numbers .region-list:after {
+        position: absolute;
+        content: " ";
+        background: #4b80df url("../images/spritesheet.png") -124px 2px no-repeat;
+        width: 20px;
+        height: 20px;
+        right: -25px;
+        bottom: -2px; }
+    .header-wrap .region-numbers .number {
+      font-family: "PT Sans Caption", sans-serif;
+      font-size: 24px;
+      color: #01469d;
+      font-style: normal;
+      margin: 13px 0; }
+  .header-wrap .price-list {
+    display: inline-block;
+    max-width: 230px;
+    vertical-align: middle; }
+    .header-wrap .price-list .btn {
+      background: #01469d;
+      color: #fff;
+      text-decoration: none;
+      display: inline-block;
+      text-align: center;
+      padding: 15px 0;
+      min-width: 100%;
+      font-size: 14px;
+      font-weight: bold;
+      text-transform: uppercase;
+      position: relative;
+      padding-left: 15px;
+      box-sizing: border-box; }
+      .header-wrap .price-list .btn:hover {
+        background: #548ff8; }
+      .header-wrap .price-list .btn:before {
+        position: absolute;
+        content: " ";
+        background: url("../images/spritesheet.png") -97px -63px no-repeat;
+        width: 22px;
+        height: 18px;
+        left: 12px;
+        top: 12px; }
+    .header-wrap .price-list .price {
+      border-bottom: 1px dashed #01469d;
+      text-decoration: none;
+      position: relative;
+      display: inline-block;
+      margin: 15px 0 0 45px;
+      text-transform: uppercase;
+      font-weight: bold;
+      font-family: "PT Sans", sans-serif;
+      font-size: 14px; }
+      .header-wrap .price-list .price:before {
+        position: absolute;
+        content: " ";
+        background: url("../images/spritesheet.png") -149px -5px no-repeat;
+        width: 17px;
+        height: 20px;
+        left: -31px;
+        top: 50%;
+        margin-top: -10px; }
+  .header-wrap .contact-mail {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 20px; }
+    .header-wrap .contact-mail a {
+      position: relative;
+      margin-bottom: 7px;
+      display: inline-block; }
+      .header-wrap .contact-mail a:before {
+        position: absolute;
+        content: " ";
+        background: url("../images/spritesheet.png") -71px -91px no-repeat;
+        width: 22px;
+        height: 27px;
+        left: -30px;
+        top: -12px; }
+  .header-wrap .shedule {
+    display: inline-block;
+    vertical-align: middle;
+    max-width: 300px; }
+    .header-wrap .shedule .shedule-wrap {
+      max-width: 125px;
+      display: inline-block; }
+      .header-wrap .shedule .shedule-wrap .block1 {
+        font-size: 14px;
+        color: #01469c;
+        font-style: normal;
+        font-weight: bold;
+        position: relative;
+        padding-left: 30px; }
+        .header-wrap .shedule .shedule-wrap .block1:before {
+          position: absolute;
+          content: " ";
+          background: url("../images/spritesheet.png") -5px -63px no-repeat;
+          width: 23px;
+          height: 23px;
+          left: 0;
+          top: -5px; }
+      .header-wrap .shedule .shedule-wrap .block2 {
+        display: inline-block;
+        max-width: 125px;
+        margin-top: 10px; }
+    .header-wrap .shedule .block3 {
+      background: #e5eff7;
+      display: inline-block;
+      max-width: 125px;
+      padding: 10px;
+      position: relative; }
+      .header-wrap .shedule .block3:before {
+        position: absolute;
+        content: " ";
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 12px 12px 12px 0;
+        border-color: transparent #e5eff7 transparent transparent;
+        top: 18px;
+        left: -12px; }
+
+.header-nav {
+  background: #01469c; }
+  .header-nav .menu {
+    display: inline-block;
+    width: 60%;
+    vertical-align: middle; }
+    .header-nav .menu li {
+      display: inline-block;
+      padding: 17px 2%; }
+      .header-nav .menu li:first-child {
+        background: #4b80de; }
+      .header-nav .menu li:first-child a:hover {
+        text-decoration: none; }
+      .header-nav .menu li a {
+        color: #fff;
+        text-decoration: none;
+        font-size: 15px;
+        font-weight: bold;
+        text-transform: uppercase; }
+        .header-nav .menu li a:hover {
+          text-decoration: underline; }
+  .header-nav .search-form {
+    display: inline-block;
+    position: relative;
+    width: 35%; }
+    .header-nav .search-form:before {
+      position: absolute;
+      content: " ";
+      background: url("../images/spritesheet.png") -38px -91px no-repeat;
+      width: 23px;
+      height: 23px;
+      top: 9px;
+      left: 10px; }
+    .header-nav .search-form input {
+      height: 36px;
+      border: none;
+      padding: 0;
+      width: 100%;
+      padding-left: 45px;
+      box-sizing: border-box; }
+    .header-nav .search-form button {
+      position: absolute;
+      top: 0px;
+      right: 0px;
+      min-width: 100px;
+      display: inline-block;
+      background: #4b80de;
+      text-decoration: none;
+      color: #fff;
+      font-size: 15px;
+      font-weight: bold;
+      padding: 9.5px 0;
+      text-transform: uppercase;
+      border: none; }
+
+/*# sourceMappingURL=style.css.map */
